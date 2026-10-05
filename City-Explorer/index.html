@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>City Explorer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>City Explorer</h1>
+        <nav>
+            <ul>
+                <li><a href="#destinatii">Destinații</a></li>
+                <li><a href="#planifica">Planifică</a></li>
+                <li><a href="#recomandari">Recomandări</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="destinatii">
+            <h2>Destinatii</h2>
+
+            <article>
+                <h3>Lisabona</h3>
+                <p><strong>Țara:</strong> Portugalia</p>
+                <p>Un oraș fermecător așezat pe coline, faimos pentru tramvaiele galbene, cartierul istoric Alfama și muzica Fado.</p>
+                <p><strong>Durată recomandată:</strong> 4 zile</p>
+            </article>
+
+            <article>
+                <h3>Roma</h3>
+                <p><strong>Țara:</strong> Italia</p>
+                <p>Orașul Etern găzduiește Colosseumul, Fontana di Trevi și un muzeu în aer liber la fiecare colț de stradă.</p>
+                <p><strong>Durată recomandată:</strong> 5 zile</p>
+            </article>
+
+            <article>
+                <h3>Atena</h3>
+                <p><strong>Țara:</strong> Grecia</p>
+                <p>Leagănul civilizației occidentale, dominat de maiestuoasa Acropolă și cartiere pline de viață precum Plaka.</p>
+                <p><strong>Durată recomandată:</strong> 3 zile</p>
+            </article>
+
+            <article class="featured">
+                <h3>Barcelona</h3>
+                <p><strong>Țara:</strong> Spania</p>
+                <p>Combinația perfectă între arhitectura modernistă a lui Gaudí, plaje mediteraneene și viață de noapte vibrantă.</p>
+                <p><strong>Durată recomandată:</strong> 4 zile</p>
+            </article>
+
+            <article>
+                <h3>Praga</h3>
+                <p><strong>Țara:</strong> Cehia</p>
+                <p>Orașul celor o sută de turnuri, celebru pentru Podul Carol, Castelul Praga și centrul medieval conservat intact.</p>
+                <p><strong>Durată recomandată:</strong> 3 zile</p>
+            </article>
+        </section>
+
+        <section id="planifica">
+            <h2>Planifică</h2>
+            <form action="#" method="post">
+                <div>
+                    <label for="nume">Nume:</label>
+                    <input type="text" id="nume" name="nume" placeholder="Numele tău complet" required>
+                </div>
+                <br>
+                <div>
+                    <label for="destinatie">Destinație:</label>
+                    <select id="destinatie" name="destinatie" required>
+                        <option value="" disabled selected>Alege...</option>
+                        <option value="lisabona">Lisabona</option>
+                        <option value="roma">Roma</option>
+                        <option value="atena">Atena</option>
+                        <option value="barcelona">Barcelona</option>
+                        <option value="praga">Praga</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="numar_zile">Număr de zile:</label>
+                    <input type="number" id="numar_zile" name="numar_zile" min="1" max="30" value="3" required>
+                </div>
+                <button type="submit">Planifică excursia</button>
+            </form>
+        </section>
+
+        <section id="recomandari">
+            <h2>Recomandări</h2>
+            <ul>
+                <li><strong>Rezervă din timp intrările la muzee:</strong> Pentru obiective majore (ex. Acropola, Colosseumul, Sagrada Família), rezervările online te scutesc de ore întregi petrecute la coadă.</li>
+                <li><strong>Călătorește ușor:</strong> Un bagaj de mână compact îți oferă flexibilitate maximă și reduce costurile cu transportul aerian.</li>
+                <li><strong>Explorează gastronomia locală:</strong> Evită restaurantele din piețele centrale orientate strict către turiști și încearcă tavernele sau bistro-urile locale frecventate de rezidenți.</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Ghidul Călătorului. Realizat de Tentea Mario.</p>
+    </footer>
+
+</body>
+</html>
