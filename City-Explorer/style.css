@@ -1,0 +1,205 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6;
+    color: #2d3748;
+    background-color: #f7fafc;
+    padding: 0 1.5rem 3rem 1.5rem;
+}
+
+main {
+    max-width: 1100px;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+
+header {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1.25rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+header h1 {
+    font-size: 1.6rem;
+    color: #1a202c;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #4a5568;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+header nav a:hover {
+    color: #5b3fd9;
+}
+
+
+#planifica form {
+    max-width: 520px;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+#planifica form div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.25rem;
+}
+
+#planifica label {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #4a5568;
+    cursor: pointer;
+}
+
+#planifica input,
+#planifica select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #cbd5e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #2d3748;
+    background-color: #ffffff;
+    transition: outline 0.2s ease, border-color 0.2s ease;
+}
+
+#planifica input:focus,
+#planifica select:focus {
+    outline: 2px solid #5b3fd9;
+    border-color: #5b3fd9;
+}
+
+#planifica button[type="submit"] {
+    width: 100%;
+    padding: 0.85rem;
+    background-color: #5b3fd9;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+#planifica button[type="submit"]:hover {
+    background-color: #492eb8;
+}
+
+#planifica button[type="submit"]:active {
+    transform: scale(0.99);
+}
+
+
+#destinatii {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#destinatii h2,
+#planifica h2,
+#recomandari h2 {
+    font-size: 1.75rem;
+    color: #1a202c;
+    border-left: 4px solid #5b3fd9;
+    padding-left: 0.75rem;
+}
+
+#destinatii {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+#destinatii h2 {
+    grid-column: 1 / -1;
+}
+
+#destinatii article {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+#destinatii article h3 {
+    color: #1a202c;
+    font-size: 1.3rem;
+}
+
+
+#destinatii article:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+
+#destinatii article.featured {
+    border: 2px solid #5b3fd9;
+    background-color: #f5f3ff;
+    position: relative;
+    box-shadow: 0 4px 14px rgba(91, 63, 217, 0.15);
+}
+
+#destinatii article.featured::after {
+    content: "Recomandat";
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: #5b3fd9;
+    color: #ffffff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.25rem 0.6rem;
+    border-radius: 999px;
+    text-transform: uppercase;
+}
+
+#recomandari ul {
+    margin-top: 1rem;
+    padding-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+footer {
+    max-width: 1100px;
+    margin: 2rem auto 0 auto;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e2e8f0;
+    text-align: center;
+    color: #718096;
+    font-size: 0.9rem;
+}
